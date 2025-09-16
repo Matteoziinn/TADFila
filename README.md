@@ -51,3 +51,42 @@ javac -d bin $(find src/main/java -name "*.java")
 
 # Executar os testes
 java -cp bin com.aula.TesteOperacoesFila
+Execução da Main (exemplo simples)
+bash
+Copiar código
+java -cp bin com.aula.Main
+⚠️ Atenção: a classe Main é apenas um exemplo didático.
+Para verificar todos os exercícios implementados, rode TesteOperacoesFila.
+
+✅ Saída esperada dos testes
+Ao rodar TesteOperacoesFila, a saída será semelhante a:
+
+yaml
+Copiar código
+==== Testes OperacoesFila ====
+Antes rotacao: 
+Impressão da Fila: 
+1 - 2 - 3 - 4 - 5
+Depois rotacao (k=2): 
+Impressão da Fila: 
+3 - 4 - 5 - 1 - 2
+...
+Depois espelhar: 
+Impressão da Fila: 
+1 - 2 - 3 - 1 - 2 - 3
+==== Fim dos testes ====
+📂 Estrutura do projeto
+bash
+Copiar código
+src/main/java/com/aula/
+ ├── Main.java
+ ├── TesteOperacoesFila.java   # Classe de testes principais
+ ├── classe/
+ │    ├── FilaSimples.java     # Implementação com array circular
+ │    ├── FilaEncadeada.java   # Implementação encadeada
+ │    └── OperacoesFila.java   # Exercícios implementados
+ └── iClasse/
+      └── Fila.java            # Interface da fila
+📝 Autor
+Trabalho desenvolvido como parte da disciplina Estrutura de Dados (TAD - Fila)
+Curso: Análise e Desenvolvimento de Sistemas
